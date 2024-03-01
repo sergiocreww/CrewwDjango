@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miembros</title>
+</head>
+<body>
+    <h1>Miembros</h1>
+  
+<ul>
+  {% for x in mymembers %}
+    <li><a href="details/{{ x.id }}">{{ x.PrimerNombre }} {{ x.UltimoNombre }}</a></li>
+  {% endfor %}
+</ul>
+</body>
+</html>
